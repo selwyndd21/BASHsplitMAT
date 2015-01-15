@@ -1,0 +1,61 @@
+--- flux_HTTR30MW_pseudo.inp	2015-01-15 16:23:56.190279200 +0800
++++ flux_HTTR30MW_near_pseudo6000.inp	2015-01-15 22:09:39.864517300 +0800
+@@ -1,4 +1,4 @@
+-MESSAGE: DATAPATH=/home/selwyndd21/LANL/30mw_pseudo
++MESSAGE: DATAPATH=/data/ptslserv/MCNP/MCNP_DATA_2013/xdata
+ 
+ HTTR Start-Up Core Critical (30 fuel columns) --
+ c Cell Cards 
+@@ -1469,9 +1469,9 @@
+ c
+ c ------ Graphite Sleeve ------900
+ m20     5010.72c  7.2596E-09              
+-        6000.72c  8.8747E-02              
++        6000.72c  4.3138E-02    6001.72c  4.5609E-02
+ c Total 8.8747E-02
+-mt20    grph.16t
++mt20   grph.15t   grpx.16t
+ c
+ c ------ Burnable Poison (2.0%) ------1280
+ m21     5010.73c  3.6954E-04    5010.74c  2.9518E-05
+@@ -1483,9 +1483,9 @@
+ c ------ Burnable Poison (2.0%) ------900
+ m22     5010.72c  3.9906E-04              
+         5011.72c  1.6063E-03              
+-        6000.72c  8.8446E-02              
++        6000.72c  4.2992E-02    6001.72c  4.5454E-02
+ c Total 9.0451E-02
+-mt22   grph.16t
++mt22   grph.15t   grpx.16t
+ c
+ c ------ Burnable Poison (2.5%) ------1180
+ m62     5010.72c  3.1157E-05    5010.73c  4.6766E-04
+@@ -1521,9 +1521,9 @@
+ c
+ c ------ Graphite Disks ------900
+ m67     5010.72c  7.2596E-09              
+-        6000.72c  8.8747E-02              
++        6000.72c  4.3138E-02    6001.72c  4.5609E-02
+ c Total 8.8747E-02
+-mt67   grph.16t
++mt67   grph.15t   grpx.16t
+ c
+ c -- Neutron Absorber -------
+ c -- Control Rod ----------680
+@@ -1600,9 +1600,9 @@
+ mt57   grph.16t   grpx.17t
+ c ------ IG-110 Graphite ------900
+ m58     5010.72c  1.1453E-08              
+-        6000.72c  8.7804E-02              
++        6000.72c  4.2680E-02    6001.72c  4.5124E-02
+ c Total 8.7804E-02
+-mt58   grph.16t
++mt58   grph.15t   grpx.16t
+ c ------ IG-110 Graphite ------1160
+ m59     5010.72c  1.4368E-09    5010.73c  1.0016E-08
+         6000.72c  1.1016E-02    6001.73c  7.6788E-02
+@@ -1865,4 +1865,3 @@
+       55.050 -76.350 -20  55.050 -76.350 20
+      -55.050 -76.350 -20 -55.050 -76.350 20
+ c print
+-
